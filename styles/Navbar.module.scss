@@ -1,0 +1,14 @@
+.header {
+  ul {
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+      width: 80px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
