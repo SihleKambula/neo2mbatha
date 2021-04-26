@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  margin: 50px auto;
+  padding: 20px 30px;
+
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #ceb301;
+  }
+
+  p {
+    color: #7b889c;
+    font-size: 1.1rem;
+  }
+}

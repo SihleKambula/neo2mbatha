@@ -1,7 +1,9 @@
 import React from "react";
 import BoxIllustrations from "../Components/BoxIllustrations";
+import Instructions from "../Components/Instructions";
 import Main from "../Components/Main";
 import Navbar from "../Components/Navbar";
+import WhyUs from "../Components/WhyUs";
 
 const Index = () => {
   return (
@@ -9,6 +11,8 @@ const Index = () => {
       <Navbar />
       <Main />
       <BoxIllustrations />
+      <WhyUs />
+      <Instructions />
     </>
   );
 };

@@ -1,0 +1,40 @@
+.container {
+  text-align: center;
+
+  h1 {
+    color: #ceb301;
+    font-size: 3rem;
+  }
+}
+.instruction_container {
+  display: flex;
+  text-align: start;
+}
+.details_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.details {
+  width: 400px;
+  margin: 0;
+  margin-left: auto;
+
+  h2 {
+    font-size: 3rem;
+    color: #3e3d56;
+  }
+  p {
+    margin-top: 10px;
+    color: #7b889c;
+    font-size: 1.2rem;
+    // font-weight: 600;
+  }
+}
+.image {
+  flex: 1;
+  img {
+    width: 100%;
+  }
+}
