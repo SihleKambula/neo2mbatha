@@ -1,13 +1,24 @@
-import React from "react";
 import style from "../styles/Navbar.module.scss";
+import Link from "next/link";
 const Navbar = () => {
   return (
     <header className={style.header}>
-      <ul>
-        <li>
+      <nav className={style.navbar}>
+        <div className={style.logo}>
           <img src='images/neo2mbatha.png' alt='neo2mbatha' />
-        </li>
-      </ul>
+        </div>
+        <ul className={style.nav_list}>
+          <li className={style.active}>
+            <Link href='/'>Home</Link>
+          </li>
+          <li>
+            <Link href='#'>Sign up</Link>
+          </li>
+          <li>
+            <Link href='#'>Login</Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 };
