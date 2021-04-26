@@ -1,4 +1,5 @@
 import React from "react";
+import BoxIllustrations from "../Components/BoxIllustrations";
 import Main from "../Components/Main";
 import Navbar from "../Components/Navbar";
 
@@ -7,6 +8,7 @@ const Index = () => {
     <>
       <Navbar />
       <Main />
+      <BoxIllustrations />
     </>
   );
 };
