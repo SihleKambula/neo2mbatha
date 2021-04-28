@@ -1,0 +1,69 @@
+.heading {
+  text-align: center;
+  color: #ceb301;
+  font-size: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-top: 20px;
+}
+.card_container {
+  padding: 10px 20px;
+  height: 250px;
+  text-align: center;
+  //   box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.486);
+  border-radius: 10px;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.486);
+    transition: all 0.3s ease-in;
+
+    .social_media {
+      display: block;
+      transition: all 0.3s ease-in;
+    }
+  }
+}
+.image {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    object-fit: cover;
+  }
+}
+
+.name {
+  margin: 10px 0;
+  color: #7b889c;
+  font-size: 1.2rem;
+}
+
+.role {
+  margin: 5px 0;
+  color: #3e3d56;
+  font-size: 1.1rem;
+}
+
+.social_media {
+  display: none;
+  margin: 5px 0;
+  color: #000000;
+  font-size: 0.9rem;
+
+  i {
+    margin-right: 2px;
+  }
+
+  &:hover {
+    display: block;
+  }
+}

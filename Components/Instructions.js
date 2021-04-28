@@ -7,7 +7,7 @@ const Instructions = () => {
       {instructions.map((instruction) => {
         if (instruction.id % 2) {
           return (
-            <div className={style.instruction_container}>
+            <div className={style.instruction_container} key={instruction.id}>
               <div className={style.details_container}>
                 <div className={style.details}>
                   <h2>{instruction.step}</h2>
@@ -22,7 +22,7 @@ const Instructions = () => {
           );
         }
         return (
-          <div className={style.instruction_container}>
+          <div className={style.instruction_container} key={instruction.id}>
             <div className={style.details_container} style={{ order: 1 }}>
               <div className={style.details}>
                 <h2>{instruction.step}</h2>
