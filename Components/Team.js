@@ -9,12 +9,14 @@ const Team = () => {
       <div className={style.grid}>
         {team.map((member) => {
           return (
-            <CardBuilder
-              image={member.image}
-              name={member.name}
-              role={member.role}
-              socialMediaLinks={member.socialMediaLinks}
-            />
+            <div key={member.role}>
+              <CardBuilder
+                image={member.image}
+                name={member.name}
+                role={member.role}
+                socialMediaLinks={member.socialMediaLinks}
+              />
+            </div>
           );
         })}
       </div>

@@ -7,3 +7,10 @@
   height: 100px;
   background-color: rgb(179, 179, 179);
 }
+
+@media (max-width: 600px) {
+  .box {
+    width: 60px;
+    height: 60px;
+  }
+}

@@ -8,7 +8,7 @@ const Main = () => {
           <img src='images/main.png' alt='delivery' />
         </div>
       </div>
-      <div className={style.form_section}>
+      <div className={style.intro}>
         <h1 className={style.heading}>
           Bring the store <br /> to your door.
         </h1>

@@ -34,3 +34,9 @@
 .active {
   border-bottom: 3px solid #ceb301;
 }
+
+@media (max-width: 600px) {
+  .logo {
+    width: 60px;
+  }
+}

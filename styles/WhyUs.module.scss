@@ -7,13 +7,29 @@
   padding: 20px 30px;
 
   h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    margin-bottom: 10px;
     color: #ceb301;
   }
 
   p {
     color: #7b889c;
     font-size: 1.1rem;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 0;
+    align-items: flex-start;
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
   }
 }
