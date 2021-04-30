@@ -1,6 +1,16 @@
+import { useEffect, useState } from "react";
 import instructions from "../model/instructions";
 import style from "../styles/Instruction.module.scss";
 const Instructions = () => {
+  const [order, setOrder] = useState(1);
+
+  // Change the order of the site per view change
+  useEffect(() => {
+    if (screen.width <= 600) {
+      setOrder(0);
+    }
+  }, []);
+
   return (
     <div className={style.container}>
       <h1>Here's how it works</h1>.
@@ -23,7 +33,7 @@ const Instructions = () => {
         }
         return (
           <div className={style.instruction_container} key={instruction.id}>
-            <div className={style.details_container} style={{ order: 1 }}>
+            <div className={style.details_container} style={{ order }}>
               <div className={style.details}>
                 <h2>{instruction.step}</h2>
                 <h2>{instruction.heading}</h2>
